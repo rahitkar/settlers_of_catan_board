@@ -1,0 +1,30 @@
+3 stone 
+3 break 
+4 crop 
+4 sheep 
+4 wood 
+1 desert 
+
+['stone',
+    'stone',
+    'stone',
+    'stone',
+    'break',
+    'break',
+    'break',
+    'break',
+    'crop',
+    'crop',
+    'crop',
+    'crop',
+    'sheep',
+    'sheep',
+    'sheep',
+    'sheep',
+    'wood',
+    'wood',
+    'wood',
+    'wood',
+    'desert']
+
+--done-- add getRandomRecourse function 
