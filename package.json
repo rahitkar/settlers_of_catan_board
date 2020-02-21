@@ -1,0 +1,24 @@
+{
+  "name": "settlers_of_catan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MakeRandomBoard.js",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahitkar/settlers_of_catan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahitkar/settlers_of_catan/issues"
+  },
+  "homepage": "https://github.com/rahitkar/settlers_of_catan#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
