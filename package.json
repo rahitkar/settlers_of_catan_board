@@ -17,8 +17,7 @@
     "url": "https://github.com/rahitkar/settlers_of_catan/issues"
   },
   "homepage": "https://github.com/rahitkar/settlers_of_catan#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.17.1"
   }
 }
