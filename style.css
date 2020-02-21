@@ -1,0 +1,59 @@
+body {
+  padding-top: 120px;
+  /* background-color: #69c7f0; */
+}
+
+#board {
+  position: relative;
+}
+
+#display {
+  display: block;
+}
+
+.row {
+  margin-top: -36px;
+  display: block;
+  text-align: center;
+}
+
+.terrain {
+  width: 152px;
+  margin: -3px;
+  height: 172px;
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+}
+
+.backImg {
+  width: 994px;
+  height: 126%;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: -1;
+}
+
+.allPoints {
+  position: absolute;
+  width: 994px;
+  height: 126%;
+  top: -90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-top: 6%;
+}
+
+.pointBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}

@@ -26,7 +26,7 @@ const getRandomRecourses = () => {
   for (i = 19; i > 0; i--) {
     let randomNum = generateRandomNum(i);
     let [element] = boardBlocks.splice(randomNum, 1);
-    console.log(randomNum);
+    // console.log(randomNum);
 
     randomCards.push(element);
   }

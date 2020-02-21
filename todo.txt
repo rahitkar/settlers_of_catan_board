@@ -28,3 +28,5 @@
     'desert']
 
 --done-- add getRandomRecourse function 
+
+add a chatting mechanism for negotiation 

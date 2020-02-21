@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>let's talk</title>
+    <script>
+      const toggleColor = function(e) {
+        const element = e.target;
+        const color = element.style.backgroundColor;
+        if (color === 'white') {
+          element.style.backgroundColor = 'red';
+        } else {
+          element.style.backgroundColor = 'white';
+        }
+      };
+      const main = function() {
+        const elements = Array.from(document.querySelectorAll('.point'));
+        elements.forEach(element => (element.onclick = toggleColor));
+      };
+      window.onload = main;
+    </script>
+  </head>
+  <body>
+    <div id="board">
+      <div id="display">
+        <img class="backImg" src="./imgs/background.png" alt="" />
+        <div class="row">
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/desert.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/lumber.png); color: black"
+          ></div>
+        </div>
+        <div class="row">
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/ore.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/wheat.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/sheep1.png); color: black"
+          ></div>
+        </div>
+        <div class="row">
+          <div class="terrain"></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div class="terrain"></div>
+        </div>
+        <div class="row">
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div class="terrain"></div>
+          <div class="terrain"></div>
+        </div>
+        <div class="row">
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+          <div class="terrain"></div>
+          <div
+            class="terrain"
+            style="background-image: url(./imgs/brick.png); color: black"
+          ></div>
+        </div>
+      </div>
+      <div class="allPoints">
+        <div class="pointBlock" style="height: 2%;width: 33%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="pointBlock" style="height: 2%;width: 41%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="pointBlock" style="height: 2%;width: 47%">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <br />
+        <div class="pointBlock" style="height: 2%;width: 47%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <br /><br />
+        <div class="pointBlock" style="height: 2%;width: 47%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="pointBlock" style="height: 2%;width: 56%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="pointBlock" style="height: 2%;width: 62%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <br />
+        <div class="pointBlock" style="height: 2%;width: 62%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <br /><br />
+        <div class="pointBlock" style="height: 2%;width: 62%;">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
