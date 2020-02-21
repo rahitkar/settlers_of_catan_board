@@ -4,7 +4,7 @@
   "description": "",
   "main": "MakeRandomBoard.js",
   "scripts": {
-    "start": "open index.html"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
