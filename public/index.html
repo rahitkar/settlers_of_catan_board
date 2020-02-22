@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script src="MakeRandomBoard.js"></script>
     <title>settlers of catan</title>
     <script>
       const toggleColor = function(e) {
@@ -17,8 +18,14 @@
         }
       };
       const main = function() {
+        const resources = getRandomResources();
+        console.log(resources);
         const elements = Array.from(document.querySelectorAll('.point'));
         elements.forEach(element => (element.onclick = toggleColor));
+        const terrains = Array.from(document.getElementsByClassName('terrain'));
+        terrains.forEach(terrain => {
+          terrain.style.backgroundImage = `url(./imgs/${resources.pop()}.png)`;
+        });
       };
       window.onload = main;
     </script>
