@@ -1,32 +1,27 @@
-const generateRandomNum = numToMul => Math.floor(Math.random() * numToMul);
-
 const getRandomResources = () => {
-  const boardBlocks = [
-    'ore',
-    'ore',
-    'ore',
-    'brick',
-    'brick',
-    'brick',
-    'wheat',
-    'wheat',
-    'wheat',
-    'wheat',
-    'sheep1',
-    'sheep1',
-    'sheep1',
-    'sheep1',
-    'lumber',
-    'lumber',
-    'lumber',
-    'lumber',
-    'desert'
-  ];
-  const randomCards = [];
-  for (i = 19; i > 0; i--) {
-    let randomNum = generateRandomNum(i);
-    let [element] = boardBlocks.splice(randomNum, 1);
-    randomCards.push(element);
+  const boardTiles = {
+    0: ['ore', 3],
+    1: ['brick', 3],
+    2: ['wheat', 4],
+    3: ['lumber', 4],
+    4: ['sheep1', 4],
+    5: ['desert', 1]
+  };
+
+  const generateRandomCardNumber = () => {
+    const num = Math.floor(Math.random() * 6);
+    if (boardTiles[num][1] !== 0) {
+      boardTiles[num][1]--;
+      return num;
+    }
+    return generateRandomCardNumber();
+  };
+
+  const randomArrangement = [];
+  for (let i = 0; i < 19; i++) {
+    const randomCardNumber = generateRandomCardNumber();
+    randomArrangement.push(boardTiles[randomCardNumber][0]);
   }
-  return randomCards;
+
+  return randomArrangement;
 };
