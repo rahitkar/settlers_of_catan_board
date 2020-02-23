@@ -24,7 +24,7 @@
         elements.forEach(element => (element.onclick = toggleColor));
         const terrains = Array.from(document.getElementsByClassName('terrain'));
         terrains.forEach(terrain => {
-          terrain.style.backgroundImage = `url(./imgs/${resources.pop()}.png)`;
+          terrain.style.backgroundColor = `url(./imgs/${resources.pop()}.png)`;
         });
       };
       window.onload = main;
@@ -33,80 +33,138 @@
   <body>
     <div id="board">
       <div id="display">
-        <img class="backImg" src="./imgs/background.png" alt="" />
+        <svg id="boardBorder">
+          <polyline
+            class="hexagon"
+            points="250,0 750,0 1000,450 750,900 250,900 0,450"
+          />
+        </svg>
         <div class="row">
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/desert.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/lumber.png); color: black"
-          ></div>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
         </div>
         <div class="row">
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/ore.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/wheat.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/sheep1.png); color: black"
-          ></div>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
         </div>
         <div class="row">
-          <div class="terrain"></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div class="terrain"></div>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
         </div>
         <div class="row">
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div class="terrain"></div>
-          <div class="terrain"></div>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
         </div>
         <div class="row">
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
-          <div class="terrain"></div>
-          <div
-            class="terrain"
-            style="background-image: url(./imgs/brick.png); color: black"
-          ></div>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
+          <svg class="terrain">
+            <polyline
+              class="hexagon"
+              points="70,0 139,40 139,120 70,160 0,120 0,40 70,0"
+            />
+          </svg>
         </div>
       </div>
-      <div class="allPoints">
+      <div class="allPoints" style="display: none;">
         <div class="pointBlock" style="height: 2%;width: 33%;">
           <div class="point"></div>
           <div class="point"></div>
