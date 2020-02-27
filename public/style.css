@@ -264,6 +264,12 @@ select {
   justify-content: space-evenly;
 }
 
+.resourceAndCount {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px 10px;
+}
+
 /*-----------------------whomToRob---------------*/
 #whomToRobBox {
   height: 250px;
@@ -324,11 +330,10 @@ select {
 /*--------------------SelectCardToPlay------------------*/
 
 #selectCardBox {
-  height: 300px;
-  width: 600px;
+  height: 150px;
+  width: 32n0px;
   margin: 150px 0px 0px 500px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
-  background-color: rgba(28, 228, 235, 0.3);
   border-radius: 7px;
   text-align: center;
   padding-top: 10px;
@@ -337,14 +342,20 @@ select {
 }
 
 #cards {
-  margin-top: 38px;
-display: flex;
-justify-content: space-evenly;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-  height: 150px;
-  width: 120px;
+  height: 70px;
+  width: 60px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
   background-color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2);
 }

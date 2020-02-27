@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      const render = (data, type) => {
+        const renderElement = document.getElementById(type);
+        console.log(type);
+        
+        const resources = Object.keys(data);
+        resources.forEach(resource => {
+          // `● ${resource}: ${data[resource]}`
+          renderElement.innerHTML += `<div class="resourceAndCount"><li>${resource}</li><span>${data[resource]}</span></div>`;
+          // renderElement.appendChild(listElement);
+        });
+      };
+      const renderResourceAndCount = (offer, desire) => {
+        render(offer, 'offer');
+        render(desire, 'desire');
+      };
+    </script>
     <title>TradeRequest</title>
   </head>
-  <body>
+  <body onload="renderResourceAndCount({crop:2, ore:4}, {lumber:2, brick:4})">
     <div id="tradeReqBox">
       Trade Request
       <div id="tradeDetailsBox">
         <div class="tradeDetails">
           Offer
-          <div style="margin-top:20px">
-            <li>Wool</li>
-            <li>Brick</li>
+          <div style="margin-top:20px" id="offer">
           </div>
         </div>
         <div style="margin-top:45px">
@@ -29,15 +44,13 @@
         </div>
         <div class="tradeDetails">
           Desire
-          <div style="margin-top:20px">
-            <li>Lumber</li>
-          </div> 
+          <div style="margin-top:20px" id="desire">
+          </div>
         </div>
       </div>
       <div id="decisionBox">
         <div>
           <img
-          
             src="./imgs/pngs/reject.png"
             alt="accept"
             height="35px"

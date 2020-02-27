@@ -21,6 +21,7 @@
         devCardsNames.forEach(devCardName => {
           const imgElement = document.createElement('img');
           imgElement.src = allCardsPics[devCardName];
+          imgElement.title = `${devCardName}, ${devCards[devCardName]}`;
           imgElement.className = 'card';
           cardElement.appendChild(imgElement);
         });
@@ -28,7 +29,7 @@
       };
     </script>
   </head>
-  <body onload="showDevCards({knight:2, monopoly:1})">
+  <body onload="showDevCards({monopoly:1,knight:2, yearOfPlenty:2, roadBuilding:1})">
     <div id="selectCardBox">
       Select Card To Play
       <div id="cards"></div>
