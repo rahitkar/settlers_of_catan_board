@@ -103,7 +103,6 @@ body {
 .straightRoads {
   display: flex;
   justify-content: space-around;
-  /* margin: 0 auto 1%; */
   margin: 4.5% auto;
 }
 
@@ -139,13 +138,12 @@ svg {
   font-size: large;
   height: 230px;
   width: 270px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   margin: 150px 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
-  background-color: rgba(28, 228, 235, 0.3);
   border-radius: 7px;
 }
 
@@ -170,7 +168,6 @@ svg {
   font-size: large;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
-  background-color: rgba(28, 228, 235, 0.3);
 }
 
 .tradeBoxes {
@@ -276,7 +273,6 @@ select {
   width: 440px;
   margin: 150px 0px 0px 500px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
-  background-color: rgba(28, 228, 235, 0.3);
   border-radius: 7px;
   text-align: center;
   padding-top: 10px;
@@ -303,7 +299,6 @@ select {
   width: 300px;
   margin: 150px 0px 0px 500px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
-  background-color: rgba(28, 228, 235, 0.3);
   border-radius: 7px;
   text-align: center;
   padding-top: 10px;
@@ -331,7 +326,7 @@ select {
 
 #selectCardBox {
   height: 150px;
-  width: 32n0px;
+  width: 320px;
   margin: 150px 0px 0px 500px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
@@ -342,11 +337,7 @@ select {
 }
 
 #cards {
-<<<<<<< HEAD
-  margin-top: 38px;
-=======
   margin-top: 25px;
->>>>>>> 02911cf222303dc6e5343ae48629fcc4115aeec9
   display: flex;
   justify-content: space-evenly;
 }
@@ -356,7 +347,6 @@ select {
   width: 60px;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
   background-color: white;
-<<<<<<< HEAD
 }
 
 /*----------------------------------------------DiscardCards-------------------------*/
@@ -379,12 +369,10 @@ select {
   text-align: center;
   margin: 30px 10px 25px;
   font-size: 20px;
-=======
   border-radius: 7px;
   cursor: pointer;
 }
 
 .card:hover {
   transform: scale(1.2);
->>>>>>> 02911cf222303dc6e5343ae48629fcc4115aeec9
 }
