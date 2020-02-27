@@ -7,21 +7,31 @@
     <link rel="stylesheet" href="style.css" />
     <title>SelectCardToPlay</title>
     <script>
-      const showDevCards = (devCards) => {
-        const allCardsPics = {knight: './imgs/cards/devCards/'}
+      const showDevCards = devCards => {
+        const allCardsPics = {
+          knight: './imgs/cards/devCards/knight.jpg',
+          monopoly: './imgs/cards/devCards/monopoly.jpg',
+          yearOfPlenty: './imgs/cards/devCards/yearOfPlenty.jpg',
+          roadBuilding: './imgs/cards/devCards/roadBuilding.jpg'
+        };
         const cardElement = document.getElementById('cards');
+        devCardsNames = Object.keys(devCards);
+        console.log(devCards);
 
-      }
+        devCardsNames.forEach(devCardName => {
+          const imgElement = document.createElement('img');
+          imgElement.src = allCardsPics[devCardName];
+          imgElement.className = 'card';
+          cardElement.appendChild(imgElement);
+        });
+        cardElement.appendChild;
+      };
     </script>
   </head>
-  <body>
+  <body onload="showDevCards({knight:2, monopoly:1})">
     <div id="selectCardBox">
       Select Card To Play
-      <div id="cards">
-        <div class="card">Knight</div>
-        <div class="card">MonoPoly</div>
-        <div class="card">MonoPoly</div>
-      </div>
+      <div id="cards"></div>
     </div>
   </body>
 </html>
