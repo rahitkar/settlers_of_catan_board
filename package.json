@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rahitkar/settlers_of_catan#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
   }
 }

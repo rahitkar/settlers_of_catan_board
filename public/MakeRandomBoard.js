@@ -4,7 +4,7 @@ const getRandomResources = () => {
     1: ['brick', 3],
     2: ['wheat', 4],
     3: ['lumber', 4],
-    4: ['sheep1', 4],
+    4: ['sheep', 4],
     5: ['desert', 1]
   };
 
