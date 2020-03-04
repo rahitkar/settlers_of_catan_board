@@ -33,11 +33,29 @@ body {
   overflow: scroll;
 }
 
-.exceptCurrentPlayer {
-  height: 14%;
-  width: inherit;
-  border: navy solid;
-  margin-top: 2%;
+#player-info1,
+#player-info2,
+#player-info3 {
+  height: 90px;
+  width: 253px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 7px;
+  margin: 0 auto;
+  border: navy solid ;
+  /* box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2); */
+}
+.component {
+  height: 40px;
+  width: 80px;
+  margin: 2px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+.count {
+  font-size: 20px;
+  margin: 10px 15px;
 }
 
 #bank-resources {
@@ -54,18 +72,7 @@ body {
   width: 10%;
   border: steelblue solid;
   margin-top: 3%;
-  /* background-image: url('./imgs/cards/resourceCards/brickCard.jpg'); */
 }
-
-/* .bank-resource::after {
-  margin-left: 70%;
-  position: absolute;
-  width: 2%;
-  height: 2%;
-  content: '3';
-  border-radius: 50%;
-  border: black solid;
-} */
 
 .bank {
   height: 50%;
