@@ -5,41 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      const renderNumber = resourceCounts => {
+        const elements = [
+          'ore',
+          'crop',
+          'wool',
+          'lumber',
+          'brick'
+        ].map(resource => document.getElementById(resource));
+
+        elements.forEach(resource => {
+          const noOfResourceElement = document.createElement('div');
+          noOfResourceElement.innerText = resourceCounts[resource.id];
+          resource.appendChild(noOfResourceElement);
+        });
+      };
+    </script>
     <title>Maritime Trading</title>
   </head>
-  <body>
+  <body onload="renderNumber({ore:4,crop:2,wool:4, lumber:4, brick:2})">
     <div id="tradingBox">
       <div class="tradeTitle">Maritime Trading</div>
       <br />
       <div class="tradeBoxes">
         <div class="tradeBox" style="background-color: rgba(13, 228, 42, 0.5);">
           Offer
-          <div class="resourceBlock">
-            <input type="radio">
-            <div class="resourceName" id="ore">
+          <div class="resourceBlock" id="ore">
+            <input type="radio" />
+            <div class="resourceName">
               Ore
             </div>
           </div>
           <div class="resourceBlock" id="crop">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Crop
             </div>
           </div>
           <div class="resourceBlock" id="wool">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Wool
             </div>
           </div>
           <div class="resourceBlock" id="lumber">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Lumber
             </div>
           </div>
           <div class="resourceBlock" id="brick">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Brick
             </div>
@@ -47,7 +64,7 @@
         </div>
         <div style="margin-top: 80px;">
           <img
-          id="arrow"
+            id="arrow"
             src="./imgs/pngs/arrow2.png"
             alt="ex"
             height="35px"
@@ -57,34 +74,39 @@
         <div class="tradeBox" style="background-color: rgba(146, 25, 170, 0.4)">
           Desire
           <div class="resourceBlock">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Ore
             </div>
+            <div>1</div>
           </div>
           <div class="resourceBlock">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Crop
             </div>
+            <div>1</div>
           </div>
           <div class="resourceBlock">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Wool
             </div>
+            <div>1</div>
           </div>
           <div class="resourceBlock">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Lumber
             </div>
+            <div>1</div>
           </div>
           <div class="resourceBlock">
-            <input type="radio">
+            <input type="radio" />
             <div class="resourceName">
               Brick
             </div>
+            <div>1</div>
           </div>
         </div>
       </div>

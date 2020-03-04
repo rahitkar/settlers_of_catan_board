@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <script src="MakeRandomBoard.js"></script>
@@ -19,7 +22,6 @@
       };
       const main = function() {
         const resources = getRandomResources();
-        console.log(resources);
         const elements = Array.from(document.querySelectorAll('.point'));
         elements.forEach(element => (element.onclick = toggleColor));
         const terrains = Array.from(document.getElementsByClassName('terrain'));
@@ -34,319 +36,370 @@
     </script>
   </head>
   <body>
-      <g id="board">
-        <g id="display">
-          <svg id="boardBorder">
-            <image
-              class="background-image"
-              xlink:href="./imgs/jpgs/background.jpg"
-            />
-            <polyline
-              class="hexagon"
-              points="180,0 540,0 720,300 540,600 180,600 0,300"
-            />
-          </svg>
-          <g class="row">
-            <svg class="terrain">
-              <polyline
-                id="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+    <div id="container">
+      <div id="gameArea">
+        <div id="board">
+          <g id="display">
+            <svg id="boardBorder">
+              <image
+                class="background-image"
+                xlink:href="./imgs/jpgs/background.jpg"
               />
-            </svg>
-            <svg class="terrain">
               <polyline
                 class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                points="180,0 540,0 720,300 540,600 180,600 0,300"
               />
             </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
+            <div id="rows">
+              <g class="row">
+                <svg class="terrain">
+                  <polyline
+                    id="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+              </g>
+              <g class="row">
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+              </g>
+              <g class="row">
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+              </g>
+              <g class="row">
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+              </g>
+              <g class="row">
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+                <svg class="terrain">
+                  <polyline
+                    class="hexagon"
+                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
+                  />
+                </svg>
+              </g>
+            </div>
           </g>
-          <g class="row">
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
+          <g class="allInteractions">
+            <g class="pointBlock" style="width: 31%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 45%; padding-bottom: 4.5%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 46%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 59.4%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 73.6%; padding-bottom: 4.5%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 73.6%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 59.4%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 46%; padding-bottom: 4.5%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 45%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
+            <g class="pointBlock" style="width: 31%;">
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+              <svg class="point"></svg>
+            </g>
           </g>
-          <g class="row">
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
+          <g class="allInteractions">
+            <g class="tiltedRoads" style="width: 42%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="tiltedRoads" style="width: 56.5%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="straightRoads" style="width: 71%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="tiltedRoads" style="width: 71%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="straightRoads" style="width: 85.5%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="tiltedRoads" style="width: 71%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="straightRoads" style="width: 71%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="tiltedRoads" style="width: 56.5%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
+            <g class="tiltedRoads" style="width: 42%; height: 1.5%;">
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+              <svg class="road"></svg>
+            </g>
           </g>
-          <g class="row">
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-          </g>
-          <g class="row">
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-            <svg class="terrain">
-              <polyline
-                class="hexagon"
-                points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-              />
-            </svg>
-          </g>
-        </g>
-        <g class="allInteractions">
-          <g class="pointBlock" style="width: 31%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 45%; padding-bottom: 4.5%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 46%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 59.4%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 73.6%; padding-bottom: 4.5%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 73.6%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 59.4%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 46%; padding-bottom: 4.5%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 45%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-          <g class="pointBlock" style="width: 31%;">
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-            <svg class="point"></svg>
-          </g>
-        </g>
-        <g class="allInteractions">
-          <g class="tiltedRoads" style="width: 42%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="tiltedRoads" style="width: 56.5%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="straightRoads" style="width: 71%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="tiltedRoads" style="width: 69%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="straightRoads" style="width: 85%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="tiltedRoads" style="width: 69%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="straightRoads" style="width: 71%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="tiltedRoads" style="width: 56.5%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-          <g class="tiltedRoads" style="width: 42%; height: 1.5%;">
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-            <svg class="road"></svg>
-          </g>
-        </g>
-      </g>
+          <div style="height:100%; width:28%;display:flex;margin-left:72%">
+            <div id="turn-details">
+              <button id="current-turn">Your's Turn</button>
+            </div>
+            <div id="turn-box">
+              <div id="dice-box">
+                <div id="dice1"></div>
+                <div id="dice2"></div>
+              </div>
+              <button id="roll-dice">Roll The Dice</button>
+            </div>
+          </div>
+        </div>
+        <div id="interactions">
+          <div id="playerCards">
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+          </div>
+          <div id="actions">
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+            <div class="unit"></div>
+          </div>
+        </div>
+      </div>
+      <div id="otherPlayers">
+        <div id="game-Log"></div>
+        <div id="bank-resources">
+          <img src="./imgs/bank.svg" alt="Bank" class="bank" />
+          <div class="bank-resource" id="brick"></div>
+          <div class="bank-resource" id="crop"></div>
+          <div class="bank-resource" id="lumber"></div>
+          <div class="bank-resource" id="ore"></div>
+          <div class="bank-resource" id="wool"></div>
+          <div class="bank-resource" id="dev"></div>
+        </div>
+        <div class="exceptCurrentPlayer"></div>
+        <div class="exceptCurrentPlayer"></div>
+        <div class="exceptCurrentPlayer"></div>
+        <div id="current-player"></div>
+      </div>
+    </div>
   </body>
 </html>

@@ -8,16 +8,21 @@
     <title>domesticTrading</title>
     <script>
       const createOption = resourceCount => {
-        const oreElement = document.getElementById('ore');
-        const cropElement = document.getElementById('crop');
-        const woolElement = document.getElementById('wool');
-        const lumberElement = document.getElementById('lumber');
-        const brickElement = document.getElementById('brick');
-        const elements = [oreElement, cropElement, woolElement, lumberElement, brickElement];
+        const elements = [
+          'ore',
+          'crop',
+          'wool',
+          'lumber',
+          'brick'
+        ].map(resource => document.getElementById(resource));
 
         elements.forEach(element => {
           const elementName = element.id;
-          for (let resourceNum = 0; resourceNum <= resourceCount[elementName]; resourceNum++) {
+          for (
+            let resourceNum = 0;
+            resourceNum <= resourceCount[elementName];
+            resourceNum++
+          ) {
             const option = document.createElement('option');
             option.innerText = resourceNum;
             element.appendChild(option);
@@ -70,7 +75,13 @@
           </div>
         </div>
         <div style="margin-top: 80px;">
-          <img id="arrow" src="./imgs/pngs/arrow2.png" alt="ex" height="35px" width="35px" />
+          <img
+            id="arrow"
+            src="./imgs/pngs/arrow2.png"
+            alt="ex"
+            height="35px"
+            width="35px"
+          />
         </div>
         <div class="tradeBox" style="background-color: rgba(146, 25, 170, 0.4)">
           Desire

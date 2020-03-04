@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>WhomToRob</title>
+    <script>
+      const createRobbablePlayers = playerColours => {
+        const colours = {
+          red: 'crimson',
+          blue: 'dodgerblue',
+          green: 'green',
+          orange: 'orange'
+        };
+        const targetElement = document.getElementById('targets');
+        playerColours.forEach(playerColour => {
+          targetElement.innerHTML += `<div class="person" style="background-color:${colours[playerColour]};">
+          <img src="./imgs/pngs/person.png" alt="" height="80px" width="80px" />
+        </div>`;
+        });
+      };
+    </script>
   </head>
-  <body>
+  <body onload="createRobbablePlayers(['red','blue','green'])">
     <div id="whomToRobBox">
       Whom To Rob
-      <div id="targets">
-        <div class="person" style="background-color:dodgerblue;">
-          <img src="./imgs/pngs/person.png" alt="" height="80px" width="80px" />
-        </div>
-        <div class="person" style="background-color: crimson;">
-          <img src="./imgs/pngs/person.png" alt="" height="80px" width="80px" />
-        </div>
-      </div>
+      <div id="targets"></div>
     </div>
   </body>
 </html>
