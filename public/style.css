@@ -27,21 +27,21 @@ body {
 }
 
 #game-Log {
-  height: 24%;
+  height: 20%;
   width: inherit;
   border: navy solid;
   overflow: scroll;
 }
 
 .exceptCurrentPlayer {
-  height: 16%;
+  height: 14%;
   width: inherit;
   border: navy solid;
   margin-top: 2%;
 }
 
 #bank-resources {
-  height: 14%;
+  height: 12%;
   width: inherit;
   border: navy solid;
   margin-top: 2%;
@@ -51,7 +51,7 @@ body {
 
 .bank-resource {
   height: 70%;
-  width: 12%;
+  width: 10%;
   border: steelblue solid;
   margin-top: 3%;
   /* background-image: url('./imgs/cards/resourceCards/brickCard.jpg'); */
@@ -74,7 +74,7 @@ body {
 }
 
 #current-player {
-  height: 19.4%;
+  height: 15.6%;
   width: inherit;
   border: navy solid;
   margin-top: 2%;
