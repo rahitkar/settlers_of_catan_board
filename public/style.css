@@ -26,24 +26,43 @@ body {
 }
 
 #game-Log {
-  height: 20%;
+  height: 17%;
   width: inherit;
   border: navy solid;
   overflow: scroll;
+  border-radius: 7px;
 }
 
 #player-info1,
 #player-info2,
 #player-info3 {
-  height: 90px;
-  width: 253px;
+  height: 13%;
+  width: 100%;
+  display: flex;
+  border-radius: 7px;
+  border: navy solid;
+  margin: 2px;
+}
+
+#cards-count {
+  width: 38%;
+  height: 100%;
+  display: flex;
+}
+
+#resCard-count,
+#devCard-count {
+  width: 50%;
+  height: 100%;
+}
+
+#player-status {
+  width: 62%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 7px;
-  margin: 0 auto;
-  border: navy solid;
-  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
+
 .component {
   height: 40px;
   width: 80px;
@@ -52,59 +71,50 @@ body {
   box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
   display: flex;
 }
+
 .count {
   font-size: 20px;
   margin: 10px 15px;
 }
 
-#bank-resources {
-  height: 12%;
-  width: inherit;
+#bank {
+  width: 100%;
+  height: 17%;
   border: navy solid;
-  margin-top: 2%;
   display: flex;
-  justify-content: space-evenly;
-}
-
-.bank-resource {
-  height: 70%;
-  width: 10%;
-  border: steelblue solid;
-  margin-top: 3%;
-}
-
-.bank {
-  height: 50%;
-  width: auto;
-  margin-top: 5%;
+  border-radius: 7px;
+  margin: 2px;
+  justify-content: flex-start;
 }
 
 #current-player {
-  height: 15.6%;
-  width: inherit;
+  height: 21%;
+  width: 100%;
   border: navy solid;
-  margin-top: 2%;
+  margin-top: 2px;
+  border-radius: 7px;
+  display: flex;
 }
 
 #gameArea {
   width: 70%;
+  
 }
 
 #interactions {
   width: 99.4%;
   height: 16%;
   margin-top: 10px;
-  border: navy solid;
   display: flex;
   justify-content: space-between;
 }
 
 #playerCards {
-  height: 70%;
-  width: 40%;
+  height: 100%;
+  width: 45%;
   display: flex;
+  margin-top: 1%;
   justify-content: space-evenly;
-  margin-top: 1.5%;
 }
 
 #actions {
