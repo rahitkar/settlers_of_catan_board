@@ -12,13 +12,6 @@ body {
   position: absolute;
 }
 
-.afterSettlement {
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  margin: -2% 0% 0% 0%;
-}
-
 #container {
   width: 100%;
   height: inherit;
@@ -28,7 +21,6 @@ body {
 
 #otherPlayers {
   width: 414px;
-  /* border: black solid; */
   margin: 0 1%;
   position: relative;
 }
@@ -197,8 +189,16 @@ body {
   width: 101px;
   height: 124px;
   margin: 0px -3px -38px 0px;
-  stroke: burlywood;
+  /* stroke: burlywood; */
   stroke-width: 2px;
+}
+
+.numberToken {
+  fill: rgb(71, 69, 69);
+  stroke: white;
+  stroke-width: 0.3px;
+  font-size: large;
+  text-anchor: middle;
 }
 
 .terrain-image {
@@ -233,44 +233,71 @@ body {
   box-sizing: border-box;
 }
 
-.verticalRoads {
-  display: flex;
-  justify-content: space-around;
-  margin: 4.5px auto 28px;
-}
-
 .tiltedRoads {
   display: flex;
   justify-content: space-around;
   margin: 4.5px auto 28px;
+  width: 20px;
+  height: 20px;
 }
 
 .straightRoads {
   display: flex;
   justify-content: space-around;
   margin: 5.2% auto;
+  width: 20px;
+  height: 20px;
 }
 
 .road {
   background-color: black;
 }
 
-.tiltedRoads svg {
-  width: 20px;
-  height: 20px;
+/*--------------hove to refactor this part--------------*/
+g.tiltedRoads > .right-top-tilted-road {
   border-radius: 10px;
   text-align: center;
-  opacity: 0.4;
   box-sizing: border-box;
+  transform: rotate(55deg);
+  width: 40px;
+  height: 40px;
 }
 
-.straightRoads svg {
+g.tiltedRoads > .left-top-tilted-road {
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transform: rotate(125deg);
+  width: 40px;
+  height: 40px;
+}
+
+g.tiltedRoads > .right-down-tilted-road {
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transform: rotate(149deg);
+  width: 40px;
+  height: 40px;
+}
+
+g.tiltedRoads > .left-down-tilted-road {
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transform: rotate(33deg);
+  width: 40px;
+  height: 40px;
+}
+
+g.straightRoads > .road {
   width: 20px;
   height: 20px;
   border-radius: 10px;
   text-align: center;
-  opacity: 0.4;
   box-sizing: border-box;
+  width: 12px;
+  height: 45px;
 }
 
 svg {
@@ -529,6 +556,19 @@ select {
 /*----------hide------------*/
 
 .hide {
-  opacity: 0;
   pointer-events: none;
+  background-color: transparent;
+}
+
+/*------------after-----------*/
+
+.afterSettlement {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: -2% 0% 0% 0%;
+}
+
+.afterRoad {
+  margin: -2% 3% 0% 2%;
 }
