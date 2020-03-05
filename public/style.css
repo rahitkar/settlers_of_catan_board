@@ -12,6 +12,13 @@ body {
   position: absolute;
 }
 
+.afterSettlement {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: -2% 0% 0% 0%;
+}
+
 #container {
   width: 100%;
   height: inherit;
@@ -42,8 +49,8 @@ body {
   flex-wrap: wrap;
   border-radius: 7px;
   margin: 0 auto;
-  border: navy solid ;
-  /* box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2); */
+  border: navy solid;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 .component {
   height: 40px;
@@ -212,19 +219,17 @@ body {
   display: flex;
   justify-content: space-between;
   margin: -0.4% auto 1.5%;
+  height: 20px;
 }
 
-.pointBlock svg {
+.point {
+  background-color: white;
   width: 20px;
   height: 20px;
   border-radius: 10px;
   text-align: center;
   opacity: 0.4;
   box-sizing: border-box;
-}
-
-.point {
-  background-color: white;
 }
 
 .verticalRoads {
@@ -518,4 +523,11 @@ select {
 
 .card:hover {
   transform: scale(1.2);
+}
+
+/*----------hide------------*/
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
 }
