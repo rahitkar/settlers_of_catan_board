@@ -35,8 +35,8 @@
         const roads = Array.from(document.querySelectorAll('.road'));
 
         roads.forEach(road => {
-          
-          road.classList.add('hide')});
+          road.classList.add('hide');
+        });
 
         elements.forEach(element => (element.onclick = addSettlement));
       };
@@ -49,138 +49,75 @@
         <div id="board">
           <g id="display">
             <svg id="boardBorder">
-              <image
-                class="background-image"
-                xlink:href="./imgs/jpgs/background.jpg"
-              />
-              <polyline
-                class="hexagon"
-                points="180,0 540,0 720,300 540,600 180,600 0,300"
-              />
+              <image class="background-image" xlink:href="./imgs/jpgs/background.jpg" />
+              <polyline class="hexagon" points="180,0 540,0 720,300 540,600 180,600 0,300" />
             </svg>
             <div id="rows">
               <g class="row">
                 <svg class="terrain" id="k">
-                  <polyline
-                    id="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline id="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="j">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="i">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
               </g>
               <g class="row">
                 <svg class="terrain" id="l">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="r">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="q">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="h">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
               </g>
               <g class="row">
                 <svg class="terrain" id="a">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="m">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="s">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="p">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="g">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
               </g>
               <g class="row">
                 <svg class="terrain" id="b">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="n">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="o">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="f">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
               </g>
               <g class="row">
                 <svg class="terrain" id="c">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="d">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
                 <svg class="terrain" id="e">
-                  <polyline
-                    class="hexagon"
-                    points="50,0 100,30 100,90 50,120 0,90 0,30 50,0"
-                  />
+                  <polyline class="hexagon" points="50,0 100,30 100,90 50,120 0,90 0,30 50,0" />
                 </svg>
               </g>
             </div>
@@ -376,12 +313,78 @@
         </div>
         <div id="interactions">
           <div id="playerCards">
-            <div class="unit"></div>
-            <div class="unit"></div>
-            <div class="unit"></div>
-            <div class="unit"></div>
-            <div class="unit"></div>
-            <div class="unit"></div>
+            <div id="brick">
+              <svg height="112" width="72">
+                <image
+                  x="5"
+                  y="10"
+                  xlink:href="./imgs/cards/resourceCards/brickCard.jpg"
+                  height="110"
+                  width="60"
+                />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
+            <div id="wool">
+              <svg height="112" width="72">
+                <image
+                  x="5"
+                  y="10"
+                  xlink:href="./imgs/cards/resourceCards/woolCard.jpg"
+                  height="110"
+                  width="60"
+                />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
+            <div id="lumber">
+              <svg height="112" width="72">
+                <image
+                  x="5"
+                  y="10"
+                  xlink:href="./imgs/cards/resourceCards/lumberCard.jpg"
+                  height="110"
+                  width="60"
+                />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
+            <div id="ore">
+              <svg height="112" width="72">
+                <image
+                  x="5"
+                  y="10"
+                  xlink:href="./imgs/cards/resourceCards/oreCard.jpg"
+                  height="110"
+                  width="60"
+                />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
+            <div id="crop">
+              <svg height="112" width="72">
+                <image
+                  x="5"
+                  y="10"
+                  xlink:href="./imgs/cards/resourceCards/cropCard.jpg"
+                  height="110"
+                  width="60"
+                />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
+            <div id="dev">
+              <svg height="112" width="72">
+                <image x="5" y="10" xlink:href="./imgs/devCard.jpg" height="110" width="60" />
+                <circle cx="55" cy="20" r="15" style="fill:rgba(0,0,0,0.6)" />
+                <text x="48" y="29" style="fill:white;font-size:25;">0</text>
+              </svg>
+            </div>
           </div>
           <div id="actions">
             <div class="unit"></div>
@@ -394,220 +397,347 @@
       </div>
       <div id="otherPlayers">
         <div id="game-Log"></div>
-        <div id="bank-resources">
-          <img src="./imgs/bank.svg" alt="Bank" class="bank" />
-          <div class="bank-resource" id="brick"></div>
-          <div class="bank-resource" id="crop"></div>
-          <div class="bank-resource" id="lumber"></div>
-          <div class="bank-resource" id="ore"></div>
-          <div class="bank-resource" id="wool"></div>
-          <div class="bank-resource" id="dev"></div>
+        <div id="bank">
+          <div style="height:90%; width:15%;">
+            <h1 style="font-size:20px;margin-bottom:0px;">Bank</h1>
+            <img src="./imgs/bank.svg" alt="bank" height="60%" width="100%" />
+          </div>
+          <div id="brick">
+            <svg height="140" width="60">
+              <image
+                x="5"
+                y="10"
+                xlink:href="./imgs/cards/resourceCards/brickCard.jpg"
+                height="135"
+                width="50"
+              />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
+          <div id="wool">
+            <svg height="140" width="60">
+              <image
+                x="5"
+                y="10"
+                xlink:href="./imgs/cards/resourceCards/woolCard.jpg"
+                height="135"
+                width="50"
+              />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
+          <div id="lumber">
+            <svg height="140" width="60">
+              <image
+                x="5"
+                y="10"
+                xlink:href="./imgs/cards/resourceCards/lumberCard.jpg"
+                height="135"
+                width="50"
+              />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
+          <div id="ore">
+            <svg height="140" width="60">
+              <image
+                x="5"
+                y="10"
+                xlink:href="./imgs/cards/resourceCards/oreCard.jpg"
+                height="135"
+                width="50"
+              />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
+          <div id="crop">
+            <svg height="140" width="60">
+              <image
+                x="5"
+                y="10"
+                xlink:href="./imgs/cards/resourceCards/cropCard.jpg"
+                height="135"
+                width="50"
+              />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
+          <div id="dev">
+            <svg height="140" width="60">
+              <image x="5" y="10" xlink:href="./imgs/devCard.jpg" height="135" width="50" />
+              <circle cx="48" cy="35" r="12" style="fill:rgba(0,0,0,0.6)" />
+              <text x="43" y="42" style="fill:white;font-size:20;">0</text>
+            </svg>
+          </div>
         </div>
         <div id="player-info1">
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/star.png"
-                alt="star"
-                height="40px"
-                width="40px"
-              />
+          <div id="cards-count">
+            <div id="resCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/resCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
             </div>
-            <div id="points" class="count">0</div>
+            <div id="devCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/devCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
+            </div>
           </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/knight.png"
-                alt="knight"
-                height="40px"
-                width="40px"
-              />
+          <div id="player-status">
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/star.png" alt="star" height="40px" width="40px" />
+              </div>
+              <div id="points" class="count">0</div>
             </div>
-            <div id="knight-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/longestRoad.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/knight.png" alt="knight" height="40px" width="40px" />
+              </div>
+              <div id="knight-count" class="count">0</div>
             </div>
-            <div id="longest-road" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/settlement.png"
-                alt="settlement"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/longestRoad.png"
+                  alt="road"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="longest-road" class="count">0</div>
             </div>
-            <div id="settlements-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/road.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/settlement.png"
+                  alt="settlement"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="settlements-count" class="count">0</div>
             </div>
-            <div id="road-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/city.png"
-                alt="city"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+              </div>
+              <div id="road-count" class="count">0</div>
             </div>
-            <div id="city-count" class="count">0</div>
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+              </div>
+              <div id="city-count" class="count">0</div>
+            </div>
           </div>
         </div>
         <div id="player-info2">
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/star.png"
-                alt="star"
-                height="40px"
-                width="40px"
-              />
+          <div id="cards-count">
+            <div id="resCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/resCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
             </div>
-            <div id="points" class="count">0</div>
+            <div id="devCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/devCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
+            </div>
           </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/knight.png"
-                alt="knight"
-                height="40px"
-                width="40px"
-              />
+          <div id="player-status">
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/star.png" alt="star" height="40px" width="40px" />
+              </div>
+              <div id="points" class="count">0</div>
             </div>
-            <div id="knight-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/longestRoad.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/knight.png" alt="knight" height="40px" width="40px" />
+              </div>
+              <div id="knight-count" class="count">0</div>
             </div>
-            <div id="longest-road" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/settlement.png"
-                alt="settlement"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/longestRoad.png"
+                  alt="road"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="longest-road" class="count">0</div>
             </div>
-            <div id="settlements-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/road.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/settlement.png"
+                  alt="settlement"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="settlements-count" class="count">0</div>
             </div>
-            <div id="road-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/city.png"
-                alt="city"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+              </div>
+              <div id="road-count" class="count">0</div>
             </div>
-            <div id="city-count" class="count">0</div>
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+              </div>
+              <div id="city-count" class="count">0</div>
+            </div>
           </div>
         </div>
         <div id="player-info3">
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/star.png"
-                alt="star"
-                height="40px"
-                width="40px"
-              />
+          <div id="cards-count">
+            <div id="resCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/resCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
             </div>
-            <div id="points" class="count">0</div>
+            <div id="devCard-count">
+              <svg height="90" width="75">
+                <image x="10" y="20" xlink:href="./imgs/devCard.jpg" height="60" width="50" />
+                <circle cx="55" cy="17" r="12" style="fill:rgba(0,0,0,0.6)" />
+                <text x="50" y="24" style="fill:white;font-size:20;">0</text>
+              </svg>
+            </div>
           </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/knight.png"
-                alt="knight"
-                height="40px"
-                width="40px"
-              />
+          <div id="player-status">
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/star.png" alt="star" height="40px" width="40px" />
+              </div>
+              <div id="points" class="count">0</div>
             </div>
-            <div id="knight-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/longestRoad.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/knight.png" alt="knight" height="40px" width="40px" />
+              </div>
+              <div id="knight-count" class="count">0</div>
             </div>
-            <div id="longest-road" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/settlement.png"
-                alt="settlement"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/longestRoad.png"
+                  alt="road"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="longest-road" class="count">0</div>
             </div>
-            <div id="settlements-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/road.png"
-                alt="road"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img
+                  src="./imgs/statusSigns/settlement.png"
+                  alt="settlement"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div id="settlements-count" class="count">0</div>
             </div>
-            <div id="road-count" class="count">0</div>
-          </div>
-          <div class="component">
-            <div>
-              <img
-                src="./imgs/statusSigns/city.png"
-                alt="city"
-                height="40px"
-                width="40px"
-              />
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+              </div>
+              <div id="road-count" class="count">0</div>
             </div>
-            <div id="city-count" class="count">0</div>
+            <div class="component">
+              <div>
+                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+              </div>
+              <div id="city-count" class="count">0</div>
+            </div>
           </div>
         </div>
-        <div id="current-player"></div>
+        <div id="current-player">
+            <div id="cards-count">
+                <div id="resCard-count">
+                  <svg height="140" width="85">
+                    <image x="5" y="30" xlink:href="./imgs/resCard.jpg" height="100" width="65" />
+                    <circle cx="60" cy="30" r="15" style="fill:rgba(0,0,0,0.6)" />
+                    <text x="53" y="39" style="fill:white;font-size:25;">0</text>
+                  </svg>
+                </div>
+                <div id="devCard-count">
+                    <svg height="140" width="85">
+                        <image x="2" y="30" xlink:href="./imgs/devCard.jpg" height="100" width="65" />
+                        <circle cx="60" cy="30" r="15" style="fill:rgba(0,0,0,0.6)" />
+                        <text x="53" y="39" style="fill:white;font-size:25;">0</text>
+                      </svg>
+                </div>
+              </div>
+              <div id="player-status" style="margin-top:4%">
+                <div class="component">
+                  <div>
+                    <img src="./imgs/statusSigns/star.png" alt="star" height="40px" width="40px" />
+                  </div>
+                  <div id="points" class="count">0</div>
+                </div>
+                <div class="component">
+                  <div>
+                    <img src="./imgs/statusSigns/knight.png" alt="knight" height="40px" width="40px" />
+                  </div>
+                  <div id="knight-count" class="count">0</div>
+                </div>
+                <div class="component">
+                  <div>
+                    <img
+                      src="./imgs/statusSigns/longestRoad.png"
+                      alt="road"
+                      height="40px"
+                      width="40px"
+                    />
+                  </div>
+                  <div id="longest-road" class="count">0</div>
+                </div>
+                <div class="component">
+                  <div>
+                    <img
+                      src="./imgs/statusSigns/settlement.png"
+                      alt="settlement"
+                      height="40px"
+                      width="40px"
+                    />
+                  </div>
+                  <div id="settlements-count" class="count">0</div>
+                </div>
+                <div class="component">
+                  <div>
+                    <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+                  </div>
+                  <div id="road-count" class="count">0</div>
+                </div>
+                <div class="component">
+                  <div>
+                    <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+                  </div>
+                  <div id="city-count" class="count">0</div>
+                </div>
+        </div>
       </div>
     </div>
   </body>
