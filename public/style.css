@@ -216,7 +216,8 @@ body {
   z-index: 1;
 }
 
-.allInteractions {
+.allRoads,
+.allIntersections {
   position: absolute;
   width: 720px;
   height: 544px;
