@@ -98,7 +98,6 @@ body {
 
 #gameArea {
   width: 70%;
-  
 }
 
 #interactions {
@@ -218,18 +217,24 @@ body {
   z-index: 1;
 }
 
-.allRoads,
+.allRoads {
+  position: absolute;
+  width: 720px;
+  height: 544px;
+  margin-top: 50px;
+}
+
 .allIntersections {
   position: absolute;
   width: 720px;
   height: 544px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .pointBlock {
   display: flex;
   justify-content: space-between;
-  margin: -0.4% auto 1.5%;
+  margin: 0.6% auto 1.2%;
   height: 20px;
 }
 
@@ -243,75 +248,59 @@ body {
   box-sizing: border-box;
 }
 
+/*--------------hove to refactor this part--------------*/
+
 .tiltedRoads {
   display: flex;
   justify-content: space-around;
-  margin: 4.5px auto 28px;
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5% auto -2.2%;
 }
 
 .straightRoads {
   display: flex;
   justify-content: space-around;
-  margin: 5.2% auto;
-  width: 20px;
-  height: 20px;
+  margin: 6.12% auto;
 }
 
-.road {
+.road,
+.right-top-tilted-road,
+.left-top-tilted-road,
+.right-down-tilted-road,
+.left-down-tilted-road {
   background-color: black;
-}
-
-/*--------------hove to refactor this part--------------*/
-g.tiltedRoads > .right-top-tilted-road {
+  opacity: 0.4;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
-  transform: rotate(55deg);
-  width: 40px;
+  width: 13px;
   height: 40px;
+}
+
+g.tiltedRoads > .right-top-tilted-road {
+  transform: rotate(55deg);
 }
 
 g.tiltedRoads > .left-top-tilted-road {
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
   transform: rotate(125deg);
-  width: 40px;
-  height: 40px;
 }
 
 g.tiltedRoads > .right-down-tilted-road {
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-  transform: rotate(149deg);
-  width: 40px;
-  height: 40px;
+  transform: rotate(60deg);
 }
 
 g.tiltedRoads > .left-down-tilted-road {
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-  transform: rotate(33deg);
-  width: 40px;
-  height: 40px;
-}
-
-g.straightRoads > .road {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-  width: 12px;
-  height: 45px;
+  transform: rotate(-58deg);
 }
 
 svg {
   fill: #074a6669;
+}
+
+.show-road {
+  width: 13px;
+  height: 40px;
 }
 
 /*------tradingOpen-------*/
@@ -577,8 +566,4 @@ select {
   width: 30px;
   text-align: center;
   margin: -2% 0% 0% 0%;
-}
-
-.afterRoad {
-  margin: -2% 3% 0% 2%;
 }

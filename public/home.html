@@ -13,16 +13,22 @@
     <script>
       const makeRoad = () => {
         const road = event.target;
-        console.log(road.classList);
+        console.log(road.style);
+        
+        road.style.backgroundColor = 'orange';
+        road.style.opacity = 1;
+        road.classList.remove('show-road');
         road.classList.add('afterRoad');
-        const img = `<image href='./imgs/roads/blueRoad.svg' style="height:100%; width:100%;">`;
-        road.innerHTML = img;
+        // const img = `<image href='./imgs/roads/blueRoad.svg' style="height:100%; width:100%;">`;
+        // road.innerHTML = img;
       };
 
       const showRoadPoints = correspondingRoads => {
         document.querySelector('.allRoads').classList.remove('hide');
         correspondingRoads.forEach(road => {
-          document.getElementById(road).classList.remove('hide');
+          const roadElement = document.getElementById(road)
+          roadElement.classList.remove('hide');
+          roadElement.classList.add('show-road')
         });
       };
 
@@ -39,7 +45,78 @@
         points.forEach(point => {
           point.classList.add('hide');
         });
-        showRoadPoints(['j1-jk', 'ij-j1']);
+        showRoadPoints(["k1-k2",
+"jk-k1",
+"j1-jk",
+"ij-j1",
+"i2-ij",
+"i1-i2",
+"k2-kl",
+"jk-jkr",
+"ij-ijq",
+"hi-i1",
+"kl-l1",
+"kl-klr",
+"jkr-klr",
+"jkr-jqr",
+"ijq-jqr",
+"hiq-ijq",
+"hi-hiq",
+"h1-hi",
+"al-l1",
+"klr-lmr",
+"jqr-qrs",
+"hiq-hpq",
+"gh-h1",
+"a1-al",
+"al-alm",
+"alm-lmr",
+"lmr-mrs",
+"mrs-qrs",
+"pqs-qrs",
+"hpq-pqs",
+"ghp-hpq",
+"gh-ghp",
+"g2-gh",
+"a1-a2",
+"abm-alm",
+"mns-mrs",
+"ops-pqs",
+"fgp-ghp",
+"g1-g2",
+"a2-ab",
+"ab-abm",
+"abm-bmn",
+"bmn-mns",
+"mns-nos",
+"nos-ops",
+"fop-ops",
+"fgp-fop",
+"fg-fgp",
+"fg-g1",
+"ab-b1",
+"bcn-bmn",
+"dno-nos",
+"efo-fop",
+"f1-fg",
+"bc-bcn",
+"b1-bc",
+"cdn-dno",
+"bcn-cdn",
+"deo-efo",
+"deo-dno",
+"ef-f1",
+"ef-efo",
+"bc-c1",
+"cd-cdn",
+"de-deo",
+"e2-ef",
+"c2-cd",
+"c1-c2",
+"d1-de",
+"d1-cd",
+"e1-e2",
+"de-e1"]);
       };
 
       const hideAndAddEventRoads = className => {
@@ -55,12 +132,13 @@
         const resources = getRandomResources();
         const points = Array.from(document.querySelectorAll('.point'));
         const terrains = Array.from(document.getElementsByClassName('terrain'));
-        terrains.forEach(terrain => {
+        terrains.forEach((terrain,indx) => {
+          
           let html = `<image
               class="terrain-image"
               xlink:href='./imgs/jpgs/${resources.pop()}.jpg' count="7"/>
               <circle cx="50" cy="50" r="17" fill="burlywood" opacity="0.7"/>
-              <text x="50%" y="50%"  class="numberToken" >12</text>`;
+              <text x="50%" y="50%"  class="numberToken" >${indx}</text>`;
           terrain.innerHTML += html;
         });
 
