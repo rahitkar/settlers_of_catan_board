@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
 }
 
-#otherPlayers {
+#other-players {
   width: 414px;
   margin: 0 1%;
   position: relative;
@@ -96,7 +96,7 @@ body {
   display: flex;
 }
 
-#gameArea {
+#game-area {
   width: 70%;
 }
 
@@ -108,7 +108,7 @@ body {
   justify-content: space-between;
 }
 
-#playerCards {
+#player-cards {
   height: 100%;
   width: 45%;
   display: flex;
@@ -168,7 +168,7 @@ body {
   border: navy solid;
 }
 
-#boardBorder {
+#board-border {
   width: 724px;
   height: 615px;
   fill: transparent;
@@ -198,11 +198,9 @@ body {
   width: 101px;
   height: 124px;
   margin: 0px -3px -38px 0px;
-  /* stroke: burlywood; */
-  stroke-width: 2px;
 }
 
-.numberToken {
+.number-token {
   fill: rgb(71, 69, 69);
   stroke: white;
   stroke-width: 0.3px;
@@ -228,10 +226,10 @@ body {
   position: absolute;
   width: 720px;
   height: 544px;
-  margin-top: 50px;
+  margin-top: 46px;
 }
 
-.pointBlock {
+.point-block {
   display: flex;
   justify-content: space-between;
   margin: 0.6% auto 1.2%;
@@ -246,9 +244,18 @@ body {
   text-align: center;
   opacity: 0.4;
   box-sizing: border-box;
+  cursor: pointer;
+  animation: open-animation 3s infinite;
 }
 
-/*--------------hove to refactor this part--------------*/
+@keyframes open-animation {
+  0%   { opacity: 0.4; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0.4; }
+}
+
+
+/*--------------road--------------*/
 
 .tiltedRoads {
   display: flex;
@@ -258,7 +265,7 @@ body {
   margin: 1.5% auto -2.2%;
 }
 
-.straightRoads {
+.straight-roads {
   display: flex;
   justify-content: space-around;
   margin: 6.12% auto;
@@ -269,13 +276,15 @@ body {
 .left-top-tilted-road,
 .right-down-tilted-road,
 .left-down-tilted-road {
-  background-color: black;
+  background-color: white;
   opacity: 0.4;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
   width: 13px;
   height: 40px;
+  cursor: pointer;
+  animation: open-animation 3s infinite;
 }
 
 g.tiltedRoads > .right-top-tilted-road {
@@ -564,6 +573,5 @@ select {
 .afterSettlement {
   height: 30px;
   width: 30px;
-  text-align: center;
   margin: -2% 0% 0% 0%;
 }

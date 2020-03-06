@@ -15,12 +15,13 @@
         const road = event.target;
         console.log(road.style);
         
-        road.style.backgroundColor = 'orange';
+        road.style.backgroundColor = 'transparent';
         road.style.opacity = 1;
+        road.style.animation = 'none'
         road.classList.remove('show-road');
         road.classList.add('afterRoad');
-        // const img = `<image href='./imgs/roads/blueRoad.svg' style="height:100%; width:100%;">`;
-        // road.innerHTML = img;
+        const img = `<image href='./imgs/roads/redRoad.svg' style="height:100%; width:100%;">`;
+        road.innerHTML = img;
       };
 
       const showRoadPoints = correspondingRoads => {
@@ -37,7 +38,7 @@
 
         settlement.classList.remove('point');
         settlement.classList.add('afterSettlement');
-        const img = `<image href='./imgs/settlements/blueSetelment.svg' style="height:100%; width:100%;">`;
+        const img = `<image href='./imgs/buildings/redSettlement.svg' style="height:100%; width:100%;">`;
         settlement.innerHTML = img;
 
         const points = Array.from(document.querySelectorAll('.point'));
@@ -138,7 +139,7 @@
               class="terrain-image"
               xlink:href='./imgs/jpgs/${resources.pop()}.jpg' count="7"/>
               <circle cx="50" cy="50" r="17" fill="burlywood" opacity="0.7"/>
-              <text x="50%" y="50%"  class="numberToken" >${indx}</text>`;
+              <text x="50%" y="50%"  class="number-token" >${indx}</text>`;
           terrain.innerHTML += html;
         });
 
@@ -158,10 +159,10 @@
 
   <body>
     <div id="container">
-      <div id="gameArea">
+      <div id="game-area">
         <div id="board">
           <g id="display">
-            <svg id="boardBorder">
+            <svg id="board-border">
               <image
                 class="background-image"
                 xlink:href="./imgs/jpgs/background.jpg"
@@ -299,38 +300,38 @@
             </div>
           </g>
           <g class="allIntersections">
-            <g class="pointBlock" width="31" style="width: 31%;">
+            <g class="point-block" width="31" style="width: 31%;">
               <svg class="point" id="k1"></svg>
               <svg class="point" id="j1"></svg>
               <svg class="point" id="i2"></svg>
             </g>
-            <g class="pointBlock" style="width: 45%; padding-bottom: 4.5%;">
+            <g class="point-block" style="width: 45%; padding-bottom: 4.5%;">
               <svg class="point" id="j2"></svg>
               <svg class="point" id="jk"></svg>
               <svg class="point" id="ij"></svg>
               <svg class="point" id="i1"></svg>
             </g>
-            <g class="pointBlock" style="width: 46%;">
+            <g class="point-block" style="width: 46%;">
               <svg class="point" id="kl"></svg>
               <svg class="point" id="jkr"></svg>
               <svg class="point" id="ijq"></svg>
               <svg class="point" id="hi"></svg>
             </g>
-            <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
+            <g class="point-block" style="width: 59.4%; padding-bottom: 4.5%;">
               <svg class="point" id="l1"></svg>
               <svg class="point" id="klr"></svg>
               <svg class="point" id="jqr"></svg>
               <svg class="point" id="hiq"></svg>
               <svg class="point" id="h1"></svg>
             </g>
-            <g class="pointBlock" style="width: 59.4%;">
+            <g class="point-block" style="width: 59.4%;">
               <svg class="point" id="al"></svg>
               <svg class="point" id="lmr"></svg>
               <svg class="point" id="qrs"></svg>
               <svg class="point" id="hpq"></svg>
               <svg class="point" id="gh"></svg>
             </g>
-            <g class="pointBlock" style="width: 73.6%; padding-bottom: 4.5%;">
+            <g class="point-block" style="width: 73.6%; padding-bottom: 4.5%;">
               <svg class="point" id="a1"></svg>
               <svg class="point" id="alm"></svg>
               <svg class="point" id="mrs"></svg>
@@ -338,7 +339,7 @@
               <svg class="point" id="ghp"></svg>
               <svg class="point" id="g2"></svg>
             </g>
-            <g class="pointBlock" style="width: 73.6%;">
+            <g class="point-block" style="width: 73.6%;">
               <svg class="point" id="a2"></svg>
               <svg class="point" id="abm"></svg>
               <svg class="point" id="mns"></svg>
@@ -346,33 +347,33 @@
               <svg class="point" id="fgp"></svg>
               <svg class="point" id="g1"></svg>
             </g>
-            <g class="pointBlock" style="width: 59.4%; padding-bottom: 4.5%;">
+            <g class="point-block" style="width: 59.4%; padding-bottom: 4.5%;">
               <svg class="point" id="ab"></svg>
               <svg class="point" id="bmn"></svg>
               <svg class="point" id="nos"></svg>
               <svg class="point" id="fop"></svg>
               <svg class="point" id="fg"></svg>
             </g>
-            <g class="pointBlock" style="width: 59.4%;">
+            <g class="point-block" style="width: 59.4%;">
               <svg class="point" id="b1"></svg>
               <svg class="point" id="bcn"></svg>
               <svg class="point" id="dno"></svg>
               <svg class="point" id="efo"></svg>
               <svg class="point" id="f1"></svg>
             </g>
-            <g class="pointBlock" style="width: 46%; padding-bottom: 4.5%;">
+            <g class="point-block" style="width: 46%; padding-bottom: 4.5%;">
               <svg class="point" id="bc"></svg>
               <svg class="point" id="cdn"></svg>
               <svg class="point" id="deo"></svg>
               <svg class="point" id="ef"></svg>
             </g>
-            <g class="pointBlock" style="width: 45%;">
+            <g class="point-block" style="width: 45%;">
               <svg class="point" id="c1"></svg>
               <svg class="point" id="cd"></svg>
               <svg class="point" id="de"></svg>
               <svg class="point" id="e2"></svg>
             </g>
-            <g class="pointBlock" style="width: 31%;">
+            <g class="point-block" style="width: 31%;">
               <svg class="point" id="c2"></svg>
               <svg class="point" id="d1"></svg>
               <svg class="point" id="e1"></svg>
@@ -387,7 +388,7 @@
               <svg class="right-top-tilted-road" id="i2-ij"></svg>
               <svg class="left-top-tilted-road" id="i1-i2"></svg>
             </g>
-            <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
+            <g class="straight-roads" style="width: 56.5%; height: 1.5%;">
               <svg class="road" id="k2-kl"></svg>
               <svg class="road" id="jk-jkr"></svg>
               <svg class="road" id="ij-ijq"></svg>
@@ -403,7 +404,7 @@
               <svg class="right-top-tilted-road" id="hi-hiq"></svg>
               <svg class="left-top-tilted-road" id="h1-hi"></svg>
             </g>
-            <g class="straightRoads" style="width: 71%; height: 1.5%;">
+            <g class="straight-roads" style="width: 71%; height: 1.5%;">
               <svg class="road" id="al-l1"></svg>
               <svg class="road" id="klr-lmr"></svg>
               <svg class="road" id="jqr-qrs"></svg>
@@ -422,7 +423,7 @@
               <svg class="right-top-tilted-road" id="gh-ghp"></svg>
               <svg class="left-top-tilted-road" id="g2-gh"></svg>
             </g>
-            <g class="straightRoads" style="width: 85.5%; height: 1.5%;">
+            <g class="straight-roads" style="width: 85.5%; height: 1.5%;">
               <svg class="road" id="a1-a2"></svg>
               <svg class="road" id="abm-alm"></svg>
               <svg class="road" id="mns-mrs"></svg>
@@ -442,7 +443,7 @@
               <svg class="left-down-tilted-road" id="fg-fgp"></svg>
               <svg class="right-down-tilted-road" id="fg-g1"></svg>
             </g>
-            <g class="straightRoads" style="width: 71%; height: 1.5%;">
+            <g class="straight-roads" style="width: 71%; height: 1.5%;">
               <svg class="road" id="ab-b1"></svg>
               <svg class="road" id="bcn-bmn"></svg>
               <svg class="road" id="dno-nos"></svg>
@@ -459,7 +460,7 @@
               <svg class="left-down-tilted-road" id="ef-f1"></svg>
               <svg class="right-down-tilted-road" id="ef-efo"></svg>
             </g>
-            <g class="straightRoads" style="width: 56.5%; height: 1.5%;">
+            <g class="straight-roads" style="width: 56.5%; height: 1.5%;">
               <svg class="road" id="bc-c1"></svg>
               <svg class="road" id="cd-cdn"></svg>
               <svg class="road" id="de-deo"></svg>
@@ -488,7 +489,7 @@
           </div>
         </div>
         <div id="interactions">
-          <div id="playerCards">
+          <div id="player-cards">
             <div id="brick">
               <svg height="112" width="72">
                 <image
@@ -571,7 +572,7 @@
           </div>
         </div>
       </div>
-      <div id="otherPlayers">
+      <div id="other-players">
         <div id="game-Log"></div>
         <div id="bank">
           <div style="height:90%; width:15%;">
@@ -695,7 +696,7 @@
             <div class="component">
               <div>
                 <img
-                  src="./imgs/statusSigns/settlement.png"
+                  src="./imgs/buildings/redSettlement.svg"
                   alt="settlement"
                   height="40px"
                   width="40px"
@@ -705,13 +706,13 @@
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+                <img src="./imgs/roads/redRoad.svg" alt="road" height="40px" width="40px" />
               </div>
               <div id="road-count" class="count">0</div>
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+                <img src="./imgs/buildings/redCity.svg" alt="city" height="40px" width="40px" />
               </div>
               <div id="city-count" class="count">0</div>
             </div>
@@ -761,7 +762,7 @@
             <div class="component">
               <div>
                 <img
-                  src="./imgs/statusSigns/settlement.png"
+                  src="./imgs/buildings/orangeSettlement.svg"
                   alt="settlement"
                   height="40px"
                   width="40px"
@@ -771,13 +772,13 @@
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+                <img src="./imgs/roads/orangeRoad.svg" alt="road" height="40px" width="40px" />
               </div>
               <div id="road-count" class="count">0</div>
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+                <img src="./imgs/buildings/orangeSettlement.svg" alt="city" height="40px" width="40px" />
               </div>
               <div id="city-count" class="count">0</div>
             </div>
@@ -827,7 +828,7 @@
             <div class="component">
               <div>
                 <img
-                  src="./imgs/statusSigns/settlement.png"
+                  src="./imgs/buildings/yellowSettlement.svg"
                   alt="settlement"
                   height="40px"
                   width="40px"
@@ -837,13 +838,13 @@
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+                <img src="./imgs/roads/yellowRoad.svg" alt="road" height="40px" width="40px" />
               </div>
               <div id="road-count" class="count">0</div>
             </div>
             <div class="component">
               <div>
-                <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+                <img src="./imgs/buildings/yellowCity.svg" alt="city" height="40px" width="40px" />
               </div>
               <div id="city-count" class="count">0</div>
             </div>
@@ -893,7 +894,7 @@
                 <div class="component">
                   <div>
                     <img
-                      src="./imgs/statusSigns/settlement.png"
+                      src="./imgs/buildings/blueSettlement.svg"
                       alt="settlement"
                       height="40px"
                       width="40px"
@@ -903,13 +904,13 @@
                 </div>
                 <div class="component">
                   <div>
-                    <img src="./imgs/statusSigns/road.png" alt="road" height="40px" width="40px" />
+                    <img src="./imgs/roads/blueRoad.svg" alt="road" height="40px" width="40px" />
                   </div>
                   <div id="road-count" class="count">0</div>
                 </div>
                 <div class="component">
                   <div>
-                    <img src="./imgs/statusSigns/city.png" alt="city" height="40px" width="40px" />
+                    <img src="./imgs/buildings/blueCity.svg" alt="city" height="40px" width="40px" />
                   </div>
                   <div id="city-count" class="count">0</div>
                 </div>
